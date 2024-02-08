@@ -1,1 +1,1 @@
-MergeSort & QuikcSort
+MergeSort & QuickSort

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CalculatorController">
+    <children>
+        <Label text="Welcome To Smart Calculator" styleClass="title"/>
+        <GridPane fx:id="gridPane" alignment="CENTER" hgap="10" vgap="10" stylesheets="@style.css">
+            <padding>
+                <Insets top="20" right="20" bottom="20" left="20"/>
+            </padding>
+            <TextField fx:id="display" GridPane.columnSpan="4" editable="false" styleClass="display"/>
+            <Button text="7" onAction="#handleNumberAction" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+            <Button text="8" onAction="#handleNumberAction" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+            <Button text="9" onAction="#handleNumberAction" GridPane.rowIndex="1" GridPane.columnIndex="2"/>
+            <Button text="+" onAction="#handleOperationAction" GridPane.rowIndex="1" GridPane.columnIndex="3"/>
+            <Button text="4" onAction="#handleNumberAction" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+            <Button text="5" onAction="#handleNumberAction" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+            <Button text="6" onAction="#handleNumberAction" GridPane.rowIndex="2" GridPane.columnIndex="2"/>
+            <Button text="-" onAction="#handleOperationAction" GridPane.rowIndex="2" GridPane.columnIndex="3"/>
+            <Button text="1" onAction="#handleNumberAction" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+            <Button text="2" onAction="#handleNumberAction" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+            <Button text="3" onAction="#handleNumberAction" GridPane.rowIndex="3" GridPane.columnIndex="2"/>
+            <Button text="*" onAction="#handleOperationAction" GridPane.rowIndex="3" GridPane.columnIndex="3"/>
+            <Button text="C" onAction="#handleClearAction" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+            <Button text="0" onAction="#handleNumberAction" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+            <Button text="/" onAction="#handleOperationAction" GridPane.rowIndex="4" GridPane.columnIndex="2"/>
+            <Button text="=" onAction="#handleEqualsAction" GridPane.rowIndex="4" GridPane.columnIndex="3"/>
+        </GridPane>
+    </children>
+</VBox>

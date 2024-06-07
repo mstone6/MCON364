@@ -1,0 +1,44 @@
+.root {
+    -fx-font-family: 'Arial';
+    -fx-background-color: linear-gradient(to bottom, #2c3e50, #4ca1af);
+}
+
+.title {
+    -fx-font-size: 28px;
+    -fx-text-fill: #ffffff;
+    -fx-padding: 10px;
+    -fx-background-color: transparent;
+}
+
+.display {
+    -fx-font-size: 24px;
+    -fx-padding: 10px;
+    -fx-background-color: #2c3e50;
+    -fx-text-fill: #ffffff;
+    -fx-border-color: #34495e;
+    -fx-border-width: 1px;
+        /*Making rounded but still square buttons */
+    -fx-background-radius: 10px;  
+    -fx-border-radius: 10px;  
+}
+
+.button {
+    -fx-font-size: 18px;
+    -fx-padding: 10px;
+    -fx-background-color: rgba(255, 255, 255, 0.2);
+    -fx-border-color: #34495e;
+    -fx-border-width: 1px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 3, 0, 0, 1);
+    -fx-text-fill: #ffffff;
+    /*Making rounded but still square buttons */
+    -fx-background-radius: 10px;  
+    -fx-border-radius: 10px;  
+}
+
+.button:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.4);
+}
+
+.button:pressed {
+    -fx-background-color: #34495e;
+}
